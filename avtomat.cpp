@@ -85,7 +85,7 @@ void sellProduct(dispenerType& productDispenser, cashRegister& cash) {
 int main() {
     setlocale(LC_ALL, "RU");
     cashRegister cash(1000);
-    dispenerType sweets(200, 29), chips(50, 120), bubbleGum(100, 35), bisquits(25, 50);
+    dispenerType sweets(150, 45), chips(84, 90), bubbleGum(50, 52), bisquits(80, 60);
 
     int choice;
     showSelection();
