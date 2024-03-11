@@ -16,7 +16,7 @@ class cashRegister
 		int getCurrentBalance() const {     //возвращает значение cashOnHand
             return cashOnHand;
         }
-		void acceptAmount(int amountIn) {   //для получения суммы, внесенной клиентом, и обновления суммы в кассе
+		void acceptAmount(int amountIn) {   //для получения суммы, внесенной клиентом, и обновления суммы в кассе; обновление суммы в кассе
             cashOnHand += amountIn;
         } 
 };
@@ -25,7 +25,7 @@ class dispenerType
 {
 	private:
 		int numberOfItems;
-		int cost;   //cost
+		int cost;   
 	public:
         dispenerType() {   ////устанавливает стоимость и количество предметов в диспенсере по 50 штук
             numberOfItems = 50;
@@ -35,10 +35,10 @@ class dispenerType
             numberOfItems = setNoOfItems;
             cost = setCost;
         }
-        int getNoOfItems() const {  //для возврата значения NumberOfItems
+        int getNoOfItems() const {  //для возврата значения NumberOfItems, оставшегося кол-ва товара
             return numberOfItems;
         }
-		int getCost() const {  //для возврата значения стоимости
+		int getCost() const {  //для возврата стоимости товара
             return cost;
         }  
         void makeSale() {  //для уменьшения количества товаров на 1
